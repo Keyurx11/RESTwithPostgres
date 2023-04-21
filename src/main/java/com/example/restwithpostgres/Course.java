@@ -12,11 +12,11 @@ public class Course implements java.io.Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int courseid;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "degreetype")
     private Degreetype degreetype;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "coursename")
     private Coursename coursename;
 

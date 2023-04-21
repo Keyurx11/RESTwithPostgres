@@ -16,7 +16,7 @@ public class Student implements java.io.Serializable {
     private String address;
     private LocalDate dob;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "course")
 
     private Course course;
